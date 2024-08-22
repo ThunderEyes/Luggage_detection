@@ -1,7 +1,7 @@
 # Abandoned luggage detection
 This project consists of detecting some luggages that may be abandoned in different kinds of places. This is a project done during my academic period with a team of 6 members.
 
-## Explaination of the project
+## Explanation of the project
 
 This project is composed of 3 steps.
 
