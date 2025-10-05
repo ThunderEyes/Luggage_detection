@@ -1,4 +1,4 @@
-# Abandoned luggage detection
+# Unattended luggage detection
 This project consists of detecting some luggages that may be abandoned in different kinds of places. This is a project done during my academic period with a team of 6 members.
 
 ## Explanation of the project
