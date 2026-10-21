@@ -1,19 +1,17 @@
 # Unattended luggage detection
-This project consists of detecting some luggages that may be abandoned in different kinds of places. This is a project done during my academic period with a team of 6 members.
+This project consists of detecting luggages that are probably unattended in complex and huge environments. This project was released over my first year of Master in my engineering school, under the supervision of an academic professor and with a collaboration between myself and 5 other students.
 
 ## Explanation of the project
 
 This project is composed of 3 steps.
 
-¤ The first one is the luggage detection. We detect some baggages through furnished videos, and to process better the future interactions of the luggages the persons who are 
-the nearest from them. The detection is done by a perception library : YOLO. 
-Why ? This project had to be done in only 3 months composed of one day of work per week. In fact, we just began to learn machine learning and deep learning at this time, so I would be difficult to apply unconsistent knowledge. The lack of time has forced us to leverage an already trained model to detect luggages.
+¤ The first step involves the luggage detection. We detect baggages through videos found on Internet. Then, we process the future interactions between the luggages and their most appropriate belongers. The detection is done by a perception library : YOLO V8. 
+Why ? This project had to be done in only 3 months composed of one day of work per week. In fact, we just began to learn machine learning and deep learning at this time, so it was be difficult to apply unconsistent knowledge. The lack of time has forced us to leverage an already trained model to detect luggages.
 
-¤ The second one, the luggage re-identification. We need to track the movements of the baggages over time to know what's going on. For this task, it's important to know to who belong a baggage. It's for this reason we decided to store all the important data in a database. We used a database tool name MongoDB. 
+¤ The second step is the luggage re-identification. We need to track the path of the baggages over time to know what's going on. For this task, it's important to know to who belongs a baggage. It's for this reason we decided to store all the important data in a database. We used a database tool name MongoDB. 
 How it works ? At each frame, some calculations are done to evaluate the position of the luggage and the nearest person, and some associations are done. All the informations are stored in the database.
 
-¤ And finally, the last step is to launch an alarm when a luggage is considered as abandoned. A certain amount of time is deduced from the frames, and then we call the alarm 
-when the luggage is over a threshold distance from his owner (the first nearest person).
+¤ And finally, the last step is to launch an alarm when a luggage is considered as unattended. A certain amount of time is deduced from the frames, and then we call the alarm when the luggage is over a threshold distance from his owner (the first nearest person).
 
 ## System algorithm
  ### Database
